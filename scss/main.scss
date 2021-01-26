@@ -1,0 +1,246 @@
+@import 'config';
+
+#main-header {
+    position: relative;
+    height: 100vh;
+    background: url('../images/desktop/image-hero.jpg') no-repeat center
+        center/cover;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2rem;
+        flex-wrap: wrap;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-size: 2rem;
+                color: #fff;
+            }
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: 1.3rem;
+                    &:hover {
+                        border-bottom: hsl(0, 0%, 100%) solid 1px;
+                    }
+                }
+            }
+        }
+    }
+
+    .showcase-sec {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        border: #fff dotted 2px;
+        width: 600px;
+        padding: 2rem;
+        .content {
+            font-size: 2rem;
+            color: #fff;
+        }
+    }
+    margin-bottom: 4rem;
+}
+
+.about-sec {
+    height: 450px;
+    max-width: 100%;
+
+    .about-content {
+        position: relative;
+        .about-image {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            background: url('../images/desktop/image-interactive.jpg') no-repeat
+                center right / cover;
+            height: 340px;
+            width: 640px;
+            padding: 2.6rem;
+            color: #333;
+        }
+
+        .about-text {
+            position: absolute;
+            top: 101px;
+            left: 45%;
+            background-color: #fff;
+            height: 240px;
+            width: 640px;
+            padding: 1rem 3rem;
+            color: #333;
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                padding: 0 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+.display-sec {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6rem;
+
+        h2 {
+            color: #333;
+        }
+
+        a {
+            border: dotted 1px #333;
+            background-color: #fff;
+        }
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: flex-start;
+        justify-content: start;
+        grid-gap: 1rem;
+        padding: 0 6rem;
+        margin-top: 2rem;
+
+        .card {
+            height: 320px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 1s ease-in-out 0.2s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            &-1 {
+                background: url('../images/desktop/image-deep-earth.jpg')
+                    no-repeat center center/cover;
+            }
+            &-2 {
+                background: url('../images/desktop/image-night-arcade.jpg')
+                    no-repeat center center/cover;
+            }
+            &-3 {
+                background: url('../images/desktop/image-soccer-team.jpg')
+                    no-repeat center center/cover;
+            }
+            &-4 {
+                background: url('../images/desktop/image-grid.jpg') no-repeat
+                    center center/cover;
+            }
+            &-5 {
+                background: url('../images/desktop/image-from-above.jpg')
+                    no-repeat center center/cover;
+            }
+            &-6 {
+                background: url('../images/desktop/image-pocket-borealis.jpg')
+                    no-repeat center center/cover;
+            }
+            &-7 {
+                background: url('../images/desktop/image-curiosity.jpg')
+                    no-repeat center center/cover;
+            }
+            &-8 {
+                background: url('../images/desktop/image-fisheye.jpg') no-repeat
+                    center center/cover;
+            }
+            h3 {
+                position: absolute;
+                bottom: 0;
+                left: 5%;
+                color: #fff;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#main-footer {
+    background: hsl(0, 0%, 0%);
+    margin-top: 5rem;
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 6rem;
+        .foot-head {
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            flex-direction: column;
+
+            h2 {
+                font-size: 1.5rem;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                li {
+                    margin: 0 0.8rem;
+                    &:first-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        &:hover {
+                            border-bottom: hsl(0, 0%, 100%) solid 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-info {
+            display: flex;
+            align-items: flex-end;
+            justify-content: end;
+            flex-direction: column;
+
+            .icons {
+                margin-bottom: 1rem;
+
+                .fa-twitter {
+                    margin: 0 1rem;
+                }
+                a {
+                    i {
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            h6 {
+                color: #fff;
+                font-size: 1rem;
+                margin-left: 1rem;
+                text-align: end;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@import 'media';

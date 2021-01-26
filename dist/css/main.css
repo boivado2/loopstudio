@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  background-color: #f4f4f4;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem; }
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  color: #333;
+  transition: all 0.8s ease;
+  background-color: #fff;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.5s linear; }
+  .btn:hover {
+    background-color: black;
+    transform: scale(1.05);
+    color: #fff; }
+  .btn:active {
+    border: none; }
+
+a {
+  text-decoration: none; }
+
+.bottom-line:hover {
+  border-bottom: 1px solid #fff; }
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none; }
+  ul li {
+    margin: 0 12px; }
+    ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem; }
+      ul li a:hover {
+        border-bottom: white solid 1px; }
+
+#main-header {
+  position: relative;
+  height: 100vh;
+  background: url("../images/desktop/image-hero.jpg") no-repeat center center/cover;
+  margin-bottom: 4rem; }
+  #main-header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap; }
+    #main-header .navbar .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #main-header .navbar .logo h1 {
+        font-size: 2rem;
+        color: #fff; }
+    #main-header .navbar .hamburger {
+      display: none; }
+    #main-header .navbar ul li a {
+      font-size: 1.3rem; }
+      #main-header .navbar ul li a:hover {
+        border-bottom: white solid 1px; }
+  #main-header .showcase-sec {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border: #fff dotted 2px;
+    width: 600px;
+    padding: 2rem; }
+    #main-header .showcase-sec .content {
+      font-size: 2rem;
+      color: #fff; }
+
+.about-sec {
+  height: 450px;
+  max-width: 100%; }
+  .about-sec .about-content {
+    position: relative; }
+    .about-sec .about-content .about-image {
+      position: absolute;
+      top: 0;
+      left: 100px;
+      background: url("../images/desktop/image-interactive.jpg") no-repeat center right/cover;
+      height: 340px;
+      width: 640px;
+      padding: 2.6rem;
+      color: #333; }
+    .about-sec .about-content .about-text {
+      position: absolute;
+      top: 101px;
+      left: 45%;
+      background-color: #fff;
+      height: 240px;
+      width: 640px;
+      padding: 1rem 3rem;
+      color: #333; }
+      .about-sec .about-content .about-text h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        padding: 0 2rem; }
+      .about-sec .about-content .about-text p {
+        font-size: 1rem;
+        line-height: 1.6; }
+
+.display-sec header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem; }
+  .display-sec header h2 {
+    color: #333; }
+  .display-sec header a {
+    border: dotted 1px #333;
+    background-color: #fff; }
+
+.display-sec .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  justify-content: start;
+  grid-gap: 1rem;
+  padding: 0 6rem;
+  margin-top: 2rem; }
+  .display-sec .cards .card {
+    height: 320px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 1s ease-in-out 0.2s; }
+    .display-sec .cards .card:hover {
+      transform: scale(1.03); }
+    .display-sec .cards .card-1 {
+      background: url("../images/desktop/image-deep-earth.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-2 {
+      background: url("../images/desktop/image-night-arcade.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-3 {
+      background: url("../images/desktop/image-soccer-team.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-4 {
+      background: url("../images/desktop/image-grid.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-5 {
+      background: url("../images/desktop/image-from-above.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-6 {
+      background: url("../images/desktop/image-pocket-borealis.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-7 {
+      background: url("../images/desktop/image-curiosity.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card-8 {
+      background: url("../images/desktop/image-fisheye.jpg") no-repeat center center/cover; }
+    .display-sec .cards .card h3 {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      color: #fff;
+      font-size: 1.4rem;
+      text-align: center; }
+
+#main-footer {
+  background: black;
+  margin-top: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem; }
+    #main-footer .footer-content .foot-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+      flex-direction: column; }
+      #main-footer .footer-content .foot-head h2 {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 1rem; }
+      #main-footer .footer-content .foot-head ul li {
+        margin: 0 0.8rem; }
+        #main-footer .footer-content .foot-head ul li:first-child {
+          margin: 0; }
+        #main-footer .footer-content .foot-head ul li a:hover {
+          border-bottom: white solid 1px; }
+    #main-footer .footer-content .footer-info {
+      display: flex;
+      align-items: flex-end;
+      justify-content: end;
+      flex-direction: column; }
+      #main-footer .footer-content .footer-info .icons {
+        margin-bottom: 1rem; }
+        #main-footer .footer-content .footer-info .icons .fa-twitter {
+          margin: 0 1rem; }
+        #main-footer .footer-content .footer-info .icons a i {
+          color: #fff;
+          font-size: 1.6rem; }
+      #main-footer .footer-content .footer-info h6 {
+        color: #fff;
+        font-size: 1rem;
+        margin-left: 1rem;
+        text-align: end; }
+        #main-footer .footer-content .footer-info h6 a {
+          color: #fff; }
+
+@media (max-width: 768px) {
+  #main-header {
+    position: relative;
+    height: 100vh;
+    background: url("../images/mobile/image-hero.jpg") no-repeat center center/cover; }
+    #main-header .navbar {
+      justify-content: space-between;
+      text-align: start;
+      padding: 1rem 0; }
+      #main-header .navbar .hamburger {
+        display: block; }
+        #main-header .navbar .hamburger .close {
+          display: none; }
+      #main-header .navbar .logo h1 {
+        font-size: 2rem;
+        color: #fff; }
+      #main-header .navbar ul {
+        display: none; }
+      #main-header .navbar.show .nav-menu {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 100vh;
+        padding-top: 2rem; }
+        #main-header .navbar.show .nav-menu li:nth-child(odd) {
+          padding: 2rem 0; }
+    #main-header .showcase-sec {
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem;
+      margin-top: 5rem; }
+      #main-header .showcase-sec .content {
+        font-size: 1.4rem;
+        color: #fff; }
+  .about-sec {
+    height: 550px;
+    margin-bottom: 2rem; }
+    .about-sec .about-content {
+      position: static;
+      display: flex;
+      flex-direction: column; }
+      .about-sec .about-content .about-image {
+        position: static;
+        width: 100%;
+        background-position: center center;
+        margin-bottom: 1rem; }
+      .about-sec .about-content .about-text {
+        position: static;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        color: #333;
+        padding: 0 2rem;
+        text-align: center; }
+        .about-sec .about-content .about-text h2 {
+          margin-bottom: 1rem;
+          font-size: 1.3rem;
+          padding: 0 2rem; }
+        .about-sec .about-content .about-text p {
+          font-size: 1rem;
+          line-height: 1.6; }
+  .display-sec {
+    margin-top: 4rem; }
+    .display-sec header {
+      padding: 0;
+      justify-content: center; }
+      .display-sec header h2 {
+        text-align: center; }
+      .display-sec header a {
+        display: none; }
+    .display-sec .cards {
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem; }
+      .display-sec .cards .card {
+        height: 120px; }
+        .display-sec .cards .card-1 {
+          background: url("../images/mobile/image-deep-earth.jpg") no-repeat center center/cover; }
+        .display-sec .cards .card-2 {
+          background: url("../images/mobile/image-night-arcade.jpg") no-repeat center center/cover; }
+        .display-sec .cards .card-3 {
+          background: url("../images/mobile/image-soccer-team.jpg") no-repeat top center/cover; }
+        .display-sec .cards .card-4 {
+          background: url("../images/mobile/image-grid.jpg") no-repeat center center/cover; }
+        .display-sec .cards .card-5 {
+          background: url("../images/mobile/image-from-above.jpg") no-repeat center center/cover; }
+        .display-sec .cards .card-6 {
+          background: url("../images/mobile/image-pocket-borealis.jpg") no-repeat center center/cover; }
+        .display-sec .cards .card-7 {
+          background: url("../images/mobile/image-curiosity.jpg") no-repeat center center/cover; }
+        .display-sec .cards .card-8 {
+          background: url("../images/mobile/image-fisheye.jpg") no-repeat center center/cover; }
+  #main-footer .footer-content {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    text-align: center; }
+    #main-footer .footer-content .foot-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+      flex-direction: column;
+      text-align: center; }
+      #main-footer .footer-content .foot-head h2 {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        text-align: center; }
+      #main-footer .footer-content .foot-head ul {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        width: 100%;
+        text-align: center; }
+        #main-footer .footer-content .foot-head ul li {
+          width: 100%;
+          margin: 1rem 0; }
+          #main-footer .footer-content .foot-head ul li:last-child {
+            margin: 0; }
+          #main-footer .footer-content .foot-head ul li a:hover {
+            border-bottom: white solid 1px; }
+    #main-footer .footer-content .footer-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      #main-footer .footer-content .footer-info .icons {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; }
+        #main-footer .footer-content .footer-info .icons .fa-twitter {
+          margin: 0 1rem; }
+        #main-footer .footer-content .footer-info .icons a {
+          text-align: center; }
+          #main-footer .footer-content .footer-info .icons a i {
+            color: #fff;
+            font-size: 1.6rem; }
+      #main-footer .footer-content .footer-info h6 {
+        color: #fff;
+        font-size: 1rem;
+        margin-left: 1rem;
+        text-align: center; }
+        #main-footer .footer-content .footer-info h6 a {
+          color: #fff; } }
+
+@media screen and (max-width: 500px) {
+  .about-sec {
+    height: 650px; } }
